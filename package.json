@@ -1,25 +1,28 @@
 {
   "name": "execucaotestes",
-  "version": "1.0.0",
-  "description": "Ferramenta para execução de testes manuais e geração de xml padrão junit para importação em ferramentas de gerenciamento de testes",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www"
   },
-  "author": "Leonardo Martins Machado",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "brew": "0.0.8",
-    "consign": "^0.1.6",
-    "express": "^4.16.4",
-    "express-graphql": "^0.7.1",
-    "graphql": "^14.0.2",
-    "jsonwebtoken": "8.4.0",
-    "prisma": "^1.20.7"
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^2.0.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv-safe": "^6.1.0",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "http-errors": "~1.6.2",
+    "mongodb": "^3.1.10",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.7.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.6"
+    "nodemon": "~1.18.6"
   }
 }
