@@ -1,0 +1,30 @@
+type Link {
+  id: ID! @unique
+  description: String!
+  url: String!
+  postedBy: User
+}
+
+type User {
+  id: ID! @unique
+  name: String!
+  email: String! @unique
+  password: String!
+  links: [Link!]!
+}
+
+type Cenario{
+  id: ID! @unique
+  precondicao: [String]!
+  dadoQue: [String!]!
+  entao:[String!]!
+  tags:[Strings!]!
+}
+
+type Funcionalidade{
+  id: ID! @unique
+  descricao: String!
+  precondicao:[String!]!
+  cenarios:[Cenario!]!
+  tags:[String!]!
+}
